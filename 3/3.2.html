@@ -110,6 +110,7 @@
 //            $("p").toggleClass("another");               //重复切换类名“another”
 //        })        
 //        $("p").hasClass("another");
+        
         //3.2.10
 //        var p_html = $("p").html();                      //获取<p>元素的HTML代码
 //        alert(p_html);                                   //打印<p>元素的HTML代码
@@ -117,6 +118,34 @@
 //        var p_text = $("p").text();                      //获取<p>元素的文本内容
 //        alert(p_text);                                   //打印<p>元素的文本内容
 //        $("p").tetx("你最喜欢的水果是？");                  //设置<p>元素的文本内容
+        
+        //3.2.11
+//        var $body = $("body").children();
+//        var $p = $("p").children();
+//        var $ul = $("ul").children();
+//        alert($body.length);
+//        alert($p.length);
+//        alert($ul.length);
+//        for(var i=0,len=$ul.length;i<len;i++){
+//            alert($ul[i].innerHTML);
+//        }
+//        var $p1 = $("p").next();                        //取得紧邻<p>元素后的同辈元素
+//        var $ul = $("ul").prev();                       //取得紧邻<ul>元素前的同辈元素
+//        var $p2 = $("p").siblings();                    //取得<p>元素的同辈元素
+//        $(document).bind("click",function(e){
+//            $(e.target).closest("li").css("color","red");
+//        })
+        
+        //3.2.12
+//        $("p").css("color","red");                      //设置<p>元素的样式为红色
+//        $("p").css({"fontSize":"30px","backgroundColor":"#888888"});
+//        同时设置字体大小和背景颜色
+//        $("p").css("opacity","0.5");
+//        $("p").height;                                  //获取<p>元素的高度值
+//        $("p").height("100");                           //设置<p>元素的高度值为100px
+//        $("p").height("10em");                          //设置<p>元素的高度值为10em
+//        $("p").width();                                 //获取<p>元素的宽度值
+//        $("p").width("400px");                          //设置<p>元素的宽度值为400px
         
     </script>
 </body>
